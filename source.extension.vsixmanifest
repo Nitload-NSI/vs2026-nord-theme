@@ -3,8 +3,8 @@
   <Metadata>
     <Identity Id="VS2026.NordShell" Version="0.1.0" Language="en-US" Publisher="Nitload-NSI" />
     <DisplayName>VS2026 Nord Shell Theme</DisplayName>
-    <Description xml:space="preserve">A Nord-inspired Visual Studio 2026 shell theme. Editor colors are intentionally not included.</Description>
-    <Tags>visual studio;theme;nord;shell</Tags>
+    <Description xml:space="preserve">A Nord-inspired Visual Studio 2026 theme with shell colors and migrated editor color categories for C#, C/C++, JSON, and XML.</Description>
+    <Tags>visual studio;theme;nord;shell;editor</Tags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[18.0,19.0)">

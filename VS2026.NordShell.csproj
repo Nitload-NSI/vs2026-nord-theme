@@ -32,5 +32,14 @@
   <Import Project="$(PkgMicrosoft_VSSDK_BuildTools)\tools\vssdk\Microsoft.VsSDK.targets"
           Condition="Exists('$(PkgMicrosoft_VSSDK_BuildTools)\tools\vssdk\Microsoft.VsSDK.targets')" />
 
+  <Target Name="ExcludeReferenceVsThemeFiles"
+          AfterTargets="AddVsThemeFile"
+          BeforeTargets="AddVsThemeMetadata">
+    <ItemGroup>
+      <VsTheme Remove="$(MSBuildProjectDirectory)\references\**\*.vstheme" />
+      <VsTheme Remove="$(MSBuildProjectDirectory)\backups\**\*.vstheme" />
+    </ItemGroup>
+  </Target>
+
   <Target Name="BuildVsixContainer" AfterTargets="Build" DependsOnTargets="CreateVsixContainer" />
 </Project>
