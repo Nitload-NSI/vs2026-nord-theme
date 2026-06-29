@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <TargetFramework>net472</TargetFramework>
+    <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">bin\</BaseOutputPath>
+    <OutputPath Condition="'$(OutputPath)' == ''">$(BaseOutputPath)$(Configuration)\$(TargetFramework)\</OutputPath>
+    <OutDir Condition="'$(OutDir)' == ''">$(OutputPath)</OutDir>
+    <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)' == ''">obj\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath Condition="'$(IntermediateOutputPath)' == ''">$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+    <RootNamespace>VS2026.NordShell</RootNamespace>
+    <AssemblyName>VS2026.NordShell</AssemblyName>
+    <Version>0.1.0</Version>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <CreateVsixContainer>true</CreateVsixContainer>
+    <DeployExtension>false</DeployExtension>
+    <TargetVSVersion>18.0</TargetVSVersion>
+    <TargetVsixContainerName>VS2026.NordShell.vsix</TargetVsixContainerName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="source.extension.vsixmanifest" />
+    <None Include="Themes\VS2026.NordShell.vstheme" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2120" PrivateAssets="all" GeneratePathProperty="true" />
+    <PackageReference Include="Microsoft.VisualStudio.VsixColorCompiler" Version="17.11.35325.10" PrivateAssets="all" />
+  </ItemGroup>
+
+  <Import Project="$(PkgMicrosoft_VSSDK_BuildTools)\tools\vssdk\Microsoft.VsSDK.targets"
+          Condition="Exists('$(PkgMicrosoft_VSSDK_BuildTools)\tools\vssdk\Microsoft.VsSDK.targets')" />
+
+  <Target Name="BuildVsixContainer" AfterTargets="Build" DependsOnTargets="CreateVsixContainer" />
+</Project>

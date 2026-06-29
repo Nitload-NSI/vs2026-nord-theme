@@ -1,15 +1,18 @@
-# VS2026 Nord Theme
+# VS2026 Nord Shell Theme
 
-A small Nord-inspired dark theme project for Visual Studio Code.
+A Nord-inspired Visual Studio 2026 shell theme packaged as a VSIX extension.
 
 ## Files
 
-- `themes/vs2026-nord-color-theme.json`: VS Code color theme definition.
+- `VS2026.NordShell.csproj`: Visual Studio extension project.
+- `source.extension.vsixmanifest`: VSIX manifest targeting Visual Studio 2026 18.x.
+- `Themes/VS2026.NordShell.vstheme`: Shell-only theme colors using Visual Studio theme color tokens.
 - `docs/nord-colors.md`: Local record of Nord `nord0` through `nord15`.
-- `scripts/validate-theme.mjs`: JSON validation helper for the theme manifest and theme file.
 
-## Validate
+Editor classification colors are intentionally not included yet.
+
+## Build
 
 ```powershell
-npm run validate
+dotnet build
 ```

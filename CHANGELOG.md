@@ -2,5 +2,5 @@
 
 ## 0.1.0
 
-- Initial VS2026 Nord theme project.
+- Initial Visual Studio 2026 Nord shell theme project.
 - Added local Nord `nord0` through `nord15` color reference.

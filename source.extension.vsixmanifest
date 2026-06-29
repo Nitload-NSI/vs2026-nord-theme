@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="VS2026.NordShell" Version="0.1.0" Language="en-US" Publisher="Nitload-NSI" />
+    <DisplayName>VS2026 Nord Shell Theme</DisplayName>
+    <Description xml:space="preserve">A Nord-inspired Visual Studio 2026 shell theme. Editor colors are intentionally not included.</Description>
+    <Tags>visual studio;theme;nord;shell</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[18.0,19.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[18.0,19.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[18.0,19.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[18.0,19.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Themes\VS2026.NordShell.pkgdef" />
+  </Assets>
+</PackageManifest>

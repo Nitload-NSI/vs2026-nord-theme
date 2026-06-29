@@ -1,5 +1,9 @@
-node_modules/
+bin/
+obj/
+.vs/
+*.user
+*.suo
 *.vsix
-.vscode-test/
+extension.vsixmanifest
 .DS_Store
 Thumbs.db
