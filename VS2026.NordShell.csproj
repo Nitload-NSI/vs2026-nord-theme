@@ -9,7 +9,7 @@
     <IntermediateOutputPath Condition="'$(IntermediateOutputPath)' == ''">$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
     <RootNamespace>VS2026.NordShell</RootNamespace>
     <AssemblyName>VS2026.NordShell</AssemblyName>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Id="VS2026.NordShell" Version="0.1.0" Language="en-US" Publisher="Nitload-NSI" />
+    <Identity Id="VS2026.NordShell" Version="0.2.0" Language="en-US" Publisher="Nitload-NSI" />
     <DisplayName>VS2026 Nord Shell Theme</DisplayName>
-    <Description xml:space="preserve">A Nord-inspired Visual Studio 2026 theme with shell colors and migrated editor color categories for C#, C/C++, JSON, and XML.</Description>
+    <Description xml:space="preserve">A Visual Studio 2026 theme that combines the built-in Cool Slate interface with NordFluent editor colors.</Description>
     <Tags>visual studio;theme;nord;shell;editor</Tags>
   </Metadata>
   <Installation>
